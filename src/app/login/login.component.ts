@@ -28,7 +28,7 @@ export class LoginComponent {
   iniciarFormulario(): FormGroup {
     return this.fb.group({
       email: ['parcial22@eam.edu.co'],
-      password: ['654321']
+      password: [654321]
     })
 
   }

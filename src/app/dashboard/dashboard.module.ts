@@ -12,7 +12,7 @@ import { SidenavModule } from '../sidenav/sidenav.module';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    HeaderModule,
+    // HeaderModule,
     SidenavModule,
   ],
   exports: [DashboardComponent]
