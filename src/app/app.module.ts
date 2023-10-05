@@ -7,26 +7,20 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { MoviesModule } from './movies/movies.module';
 import { AgregarComponent } from './agregar/agregar.component';
 import { FormsModule } from '@angular/forms';
-import { ListarComponent } from './listar/listar.component';
-import { BuscarComponent } from './buscar/buscar.component';
 import { EditarComponent } from './editar/editar.component';
-import { SidenavVComponent } from './sidenav-v/sidenav-v.component';
+import { DashtarjetaModule } from './dashtarjeta/dashtarjeta.module';
 @NgModule({
   declarations: [
-    AppComponent,
-    AgregarComponent,
-    ListarComponent,
-    BuscarComponent,
-    EditarComponent,
-    SidenavVComponent 
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginModule,
     MoviesModule,
-    DashboardModule,
-    FormsModule
+    DashboardModule,  
+    FormsModule,
+    DashtarjetaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
