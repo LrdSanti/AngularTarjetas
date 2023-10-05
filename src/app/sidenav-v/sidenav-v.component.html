@@ -1,12 +1,19 @@
-<div class="sidenav">
-    <h3>Tarjetas</h3>
-    <ul>
-      <li><a routerLink="/listar">Listar</a></li>
-      <li><a routerLink="/agregar">Agregar</a></li>
-      <li><a routerLink="/editar">Editar</a></li>
-    </ul>
+<div class="container p-5">
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="/listar">Listar</a></li>
+        <li class="list-group-item"><a href="/agregar">Agregar</a></li>
+        <li class="list-group-item"><a href="/editar">Editar</a></li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <router-outlet></router-outlet>
+      
+    </div>
   </div>
-  <div class="content">
-    <ng-content></ng-content>
-  </div>
+</div>
+
+
+  
   

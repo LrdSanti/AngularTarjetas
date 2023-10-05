@@ -1,12 +1,12 @@
-<h2>Listado de Tarjetas</h2>
-<ul>
-  <li *ngFor="let tarjeta of tarjetas">
-    Titular: {{ tarjeta.titular }}<br>
-    Número: {{ tarjeta.numero }}<br>
-    Fecha: {{ tarjeta.fecha }}<br>
-    CVV: {{ tarjeta.cvv }}<br>
-    <button (click)="editarTarjeta(tarjeta.numero)">Editar</button>
-    <hr>
+
+<ul class="list-unstyled">
+  <li *ngFor="let tarjeta of tarjetas" class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Titular: {{ tarjeta.titular }}</h5>
+      <p class="card-text">Número: {{ tarjeta.numero }}</p>
+      <p class="card-text">Fecha: {{ tarjeta.fecha }}</p>
+      <p class="card-text">CVV: {{ tarjeta.cvv }}</p>
+      <button (click)="editarTarjeta(tarjeta.numero)" class="btn btn-primary">Editar</button>
+    </div>
   </li>
 </ul>
-

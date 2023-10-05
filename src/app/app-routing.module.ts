@@ -8,10 +8,7 @@ import { BuscarComponent } from './buscar/buscar.component';
 import { EditarComponent } from './editar/editar.component';
 
 const routes: Routes = [
-  { path: 'buscar', component: BuscarComponent },
-
-  { path: 'listar', component: ListarComponent },
-  { path: 'editar', component: EditarComponent },
+  
 
   {
     path:'',redirectTo:'/login',pathMatch:'full'
@@ -19,6 +16,12 @@ const routes: Routes = [
   {
     path:'login',component:LoginComponent
   },
+
+
+  { path: 'buscar', component: BuscarComponent },
+
+  { path: 'listar', component: ListarComponent },
+  { path: 'editar', component: EditarComponent },
   {
     path:'agregar',component:AgregarComponent
   },

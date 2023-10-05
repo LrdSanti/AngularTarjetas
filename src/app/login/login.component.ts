@@ -27,8 +27,8 @@ export class LoginComponent {
 
   iniciarFormulario(): FormGroup {
     return this.fb.group({
-      username: ['electivaeam', [Validators.required]],
-      password: ['electiva2023', [Validators.required,Validators.minLength(5)]]
+      username: ['parcial22@eam.edu.co', [Validators.required]],
+      password: ['654321', [Validators.required,Validators.minLength(5)]]
     })
 
   }
@@ -38,16 +38,16 @@ export class LoginComponent {
       this.extractData()
       this.loginService.login(this.login).subscribe((res) => {
         console.log(res);
-        this.router.navigateByUrl('dashboard')
+        this.router.navigateByUrl('listar')
         SwalUtils.customMessageOk('Bienvenido','login Correcto')        
       }, (error) => {
-        this.router.navigateByUrl('dashboard')
+        this.router.navigateByUrl('listar')
         SwalUtils.customMessageError('Ops! Hubo un error', 'login Incorrecto')        
         console.log(error);
         
       })      
     } else {
-      this.router.navigateByUrl('dashboard')
+      this.router.navigateByUrl('listar')
       SwalUtils.customMessageError('Ops! Hubo un error', 'login Incorrecto')        
     }
     console.log(this.loginForm);
